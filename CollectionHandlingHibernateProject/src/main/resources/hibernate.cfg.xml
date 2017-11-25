@@ -16,5 +16,6 @@
        <!-- <property name="hibernate.current_session_context_class">thread</property>
       -->
      <mapping class="simpleHibernateProject.Users"></mapping>
+     <mapping class="simpleHibernateProject.Vehicle"></mapping>
     </session-factory>
 </hibernate-configuration>
