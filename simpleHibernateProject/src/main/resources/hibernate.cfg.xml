@@ -12,6 +12,9 @@
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
         <property name="hbm2ddl.auto">update </property>
+      <!-- Configure Below for the Get Current Session Object -->  
+       <!-- <property name="hibernate.current_session_context_class">thread</property>
+      -->
      <mapping class="simpleHibernateProject.Users"></mapping>
     </session-factory>
 </hibernate-configuration>

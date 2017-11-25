@@ -13,6 +13,7 @@ public class HibernateMain {
 
 	SessionFactory factory = new Configuration().configure().buildSessionFactory();
 	Session session = factory.openSession();
+	//Session session = factory.getCurrentSession();
 	Transaction tx =  session.beginTransaction();
 	
 	Users user = new Users();
@@ -27,6 +28,7 @@ public class HibernateMain {
 	{
 		tx.rollback();
 	}
+	
 		Users userFetch = (Users)session.get(Users.class, "Akshay Pant");
 		System.out.println("User Detail is : "+ userFetch.getName() 
 		+ "\t City: " + userFetch.getCity() +"\t Sex: " + userFetch.getSex());
